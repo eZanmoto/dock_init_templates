@@ -16,6 +16,13 @@ source for `dock init`.
 Development
 -----------
 
+### Build environment
+
+The build environment for the project requires the following to be installed:
+
+* Docker
+* [Dock](https://github.com/ezanmoto/dock)
+
 ### Testing
 
 The project can be tested locally using `bash scripts/run_tests.sh`. A
