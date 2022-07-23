@@ -18,12 +18,16 @@ Development
 
 ### Build environment
 
-The build environment for the project requires the following to be installed:
-
-* Docker
-* [Dock](https://github.com/ezanmoto/dock)
+The build environment for the project is defined in `build.Dockerfile`. The
+build environment can be replicated locally by following the setup defined in
+the Dockerfile, or `dock` can be used to mount the local directory in the build
+environment by running `dock shell`.
 
 ### Testing
 
-The project can be tested locally using `bash scripts/run_tests.sh`. A
-successful run will return an exit status of 0.
+The project can be tested locally using `just check`, or the tests can be run
+using `dock` by running the following:
+
+    dock run-in build-env: just check
+
+A successful run will return an exit status of 0.
