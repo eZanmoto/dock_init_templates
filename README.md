@@ -31,3 +31,11 @@ using `dock` by running the following:
     dock run-in build-env: just check
 
 A successful run will return an exit status of 0.
+
+### Versioning
+
+This project uses a simplification of semantic versioning. Given a version
+number MAJOR.MINOR, we increment the:
+
+1. MAJOR version when the contents of a directory in `templates` is changed
+2. MINOR version when a directory is added to `templates`
